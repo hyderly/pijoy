@@ -1,0 +1,87 @@
+
+
+.navbar{
+    background-color: $color-section;
+    border-bottom: .5rem solid $color-primary;
+    height: 8rem;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+
+
+    @media only screen and(max-width:850px){
+        height: 90vh;
+        display: none;
+        transition: all .3s ease-in-out;
+    }
+
+    &__list{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        margin: auto;
+
+        @media only screen and(max-width:1000px){
+            padding: 2rem 4rem;
+        }
+        @media only screen and(max-width:900px){
+            padding: 2rem;
+        }
+
+        @media only screen and(max-width:850px){
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 100%;
+        }
+    }
+
+    &__item{
+        margin-right: 4rem;
+
+        // @media only screen and(max-width:850px){
+        //     flex-direction: column;
+        // }
+    }
+
+    &__link{
+        text-decoration: none;
+        color: $color-primary-2;
+        font-size: 2rem;
+        font-weight: 700;
+
+        @media only screen and(max-width:1400px){
+            font-size: 1.6rem;
+        }
+        @media only screen and(max-width:1200px){
+            font-size: 1.4rem;
+        }
+        @media only screen and(max-width:1100px){
+            font-size: 1.2rem;
+        }
+
+    }
+
+    &__link::after{
+        content: "";
+        display: block;
+        background-color: $color-primary;
+        width: 0;
+        height: 3px;
+        transition: width .3s ease-in-out;
+    }
+
+    &__link:hover::after{
+        width: 100%;
+        transition: width .3s ease-in-out;
+    }
+}
+
+.display-nav{
+    display: block;
+}
+

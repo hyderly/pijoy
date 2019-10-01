@@ -1,0 +1,51 @@
+
+$color-primary: #101d2c;
+$color-primary-2:#364857;
+$color-golden:#c69963;
+$color-golden-2:#B28451;
+$color-green:#378566;
+$color-green-2:rgba(55,133,102,.8);
+
+
+$color-text-white:#fff;
+
+$color-grey:#e8e8e8;
+
+$color-section:#f1f2f6;
+
+
+$font-primary:'Noto Sans', sans-serif;
+$font-secondary: 'Lato', sans-serif;
+
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;   //10px
+    box-sizing: border-box;
+
+    @media only screen and(max-width:1200px){   //1200px
+        font-size: 55%
+    }
+
+    @media only screen and(max-width:850px){   //850px
+        font-size: 50%     //8px
+    }
+
+    @media only screen and(max-width:450px){   //450px
+        font-size: 45%     //8px
+    }
+}
+
+body{
+    font-weight: 300;
+    line-height: 1.6;
+    color: $color-primary-2;
+    font-family: $font-primary;
+}
