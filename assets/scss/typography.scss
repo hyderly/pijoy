@@ -1,0 +1,175 @@
+
+.biography,
+.accomplishments,
+.Philanthropy,
+.Gallery,
+.Contact,
+.Gallery,
+.Corporate_Affiliation{
+    margin: 0 8rem;
+    margin-bottom: 8rem;
+
+    @media only screen and(max-width:1000px){
+        margin: 0 4rem;
+    }
+    @media only screen and(max-width:650px){
+        margin: 0 2rem;
+    }
+}
+
+
+.page__title{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-family: $font-secondary;
+    font-weight: 700;
+    color: $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and(max-width:850px){
+        margin-top: 10rem;
+    }
+
+    @media only screen and(max-width:650px){
+        font-size: 3rem;
+    }
+
+    @media only screen and(max-width:450px){
+        font-size: 2.5rem;
+    }
+
+    &-2{
+        margin: 4rem 0;
+        padding: 0 30rem;
+        font-size: 3rem;
+        font-family: inherit;
+        font-weight: 500;
+        color: $color-primary;
+        text-align: center;
+
+        @media only screen and(max-width:1000px){
+            padding: 0 20rem;
+        }
+
+        @media only screen and(max-width:850px){
+            padding: 0 15rem;
+            margin: 2rem 0;
+            font-size: 2.5rem;
+        }
+        @media only screen and(max-width:650px){
+            padding: 0 10rem;
+        }
+
+        @media only screen and(max-width:450px){
+            font-size: 2rem;
+            padding: 0 6rem;
+        }
+
+    }
+
+}
+
+.page__title span{
+    font-weight: 400;
+    font-style: italic;
+    color: $color-golden-2;
+}
+
+.para-title{
+    font-size: 2rem;
+    font-family: $font-primary;
+    font-weight: 700;
+    color: $color-primary;
+    margin-top: 5rem;
+
+    @media only screen and(max-width:650px){
+        text-align: center;
+    }
+    @media only screen and(max-width:450px){
+        font-size: 1.7rem;
+    }
+}
+
+.section-title{
+    font-size: 3rem;
+    font-family: $font-primary;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding: 0 10rem;
+
+    &-1{
+        border-bottom: .5rem solid $color-golden-2;
+        display: block;
+        margin-top: 8rem;
+        
+    }
+
+    @media only screen and(max-width:650px){
+        text-align: center;
+        padding: 0 6rem;
+    }
+    @media only screen and(max-width:450px){
+        font-size: 1.7rem;
+    }
+
+
+}
+
+.para-text{
+    margin: 1rem 4rem;
+    font-size: 1.8rem;
+    text-align: justify;
+    line-height: 1.8;
+
+
+    @media only screen and(max-width:650px){
+        margin: 1rem 2rem;
+    }
+
+    &-1{
+        font-size: 2rem;
+        text-align: justify;
+        line-height: inherit;
+        padding: 0 12rem;
+
+        @media only screen and(max-width:1000px){
+            padding: 0 10rem;
+        }
+
+        @media only screen and(max-width:850px){
+            padding: 0 6rem;
+        }
+
+        @media only screen and(max-width:650px){
+            padding: 0 4rem;
+        }
+    }
+}
+
+.dark-bold{
+    color: #222;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-top: 2rem;;
+
+    @media only screen and(max-width:650px){
+        font-size: 1.8rem;
+    }
+}
+
+.margin-0{
+    margin: 1.5rem 0;
+}
+
+
+
+
+
+
+
+
