@@ -41,9 +41,6 @@ body {
   @media only screen and (max-width: 850px) {
     .Accomplishments__header {
       margin-top: 10rem; } }
-  @media only screen and (max-width: 650px) {
-    .Accomplishments__header {
-      width: 100vw; } }
 
 @keyframes para-title {
   0% {
@@ -90,9 +87,6 @@ body {
   @media only screen and (max-width: 850px) {
     .biography__header {
       margin-top: 10rem; } }
-  @media only screen and (max-width: 650px) {
-    .biography__header {
-      width: 100vw; } }
 
 .Contact__header {
   margin: 0 auto;
@@ -106,9 +100,6 @@ body {
   @media only screen and (max-width: 850px) {
     .Contact__header {
       margin-top: 10rem; } }
-  @media only screen and (max-width: 650px) {
-    .Contact__header {
-      width: 100vw; } }
 
 .contact__title {
   margin-top: 4rem;
@@ -189,9 +180,6 @@ body {
   @media only screen and (max-width: 850px) {
     .Corporate_Affiliation__header {
       margin-top: 10rem; } }
-  @media only screen and (max-width: 650px) {
-    .Corporate_Affiliation__header {
-      width: 100vw; } }
 
 .corporate__container {
   margin-top: 8rem; }
@@ -265,9 +253,6 @@ body {
   @media only screen and (max-width: 850px) {
     .Gallery__header {
       margin-top: 10rem; } }
-  @media only screen and (max-width: 650px) {
-    .Gallery__header {
-      width: 100vw; } }
 
 .gallery__box {
   margin-top: 10rem; }
@@ -516,9 +501,6 @@ body {
   @media only screen and (max-width: 850px) {
     .Philanthropy__header {
       margin-top: 10rem; } }
-  @media only screen and (max-width: 650px) {
-    .Philanthropy__header {
-      width: 100vw; } }
 
 .biography,
 .accomplishments,
