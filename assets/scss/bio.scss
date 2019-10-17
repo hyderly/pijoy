@@ -1,12 +1,13 @@
 
 
-.Accomplishments__header{
+
+.biography__header{
     margin: 0 auto;
     position: relative;
     width: 80vw;
     height: 30vh;
     background-image: linear-gradient(rgba($color-primary, 0.5),rgba($color-primary-2, .7)),
-    url(../images/accomplishment.jpg);
+    url(../images/bio.jpg);
     background-size: cover;
     background-position: center;
     margin-top: 2rem;
@@ -19,4 +20,3 @@
         width: 100vw;
     }
 }
-

@@ -1,15 +1,16 @@
 
-
-const icon = document.querySelector('.icon');
-const menu = document.querySelector('.menu');
-const navbar = document.querySelector('.navbar');
-
+let picon = document.querySelector('.icon');
+let pmenu = document.querySelector('.menu');
+let pnavbar = document.querySelector('.navbar');
 
 
-icon.addEventListener('click', function(){
-    navbar.classList.toggle('display-nav');
-    menu.classList.toggle('menu-active');
+
+picon.addEventListener('click', function(){
+    pnavbar.classList.toggle('display-nav');
+    pmenu.classList.toggle('menu-active');
 })
+
+
 
 
 

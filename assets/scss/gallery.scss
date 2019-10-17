@@ -1,3 +1,48 @@
+
+.Gallery__header{
+    margin: 0 auto;
+    position: relative;
+    width: 80vw;
+    height: 30vh;
+    background-image: linear-gradient(rgba($color-primary, 0.5),rgba($color-primary-2, .7)),
+    url(../images/image-gallery.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 2rem;
+
+    @media only screen and(max-width:850px) {
+        margin-top: 10rem;
+    }
+
+    @media only screen and(max-width:650px){
+        width: 100vw;
+    }
+}
+
+.gallery__box{
+    margin-top: 10rem;
+
+    @media only screen and (max-width:575px){
+        text-align: center;
+    }
+
+}
+
+.img-box{
+    
+    &:not(:last-child){
+        margin-right: 5rem;
+        margin-bottom: 5rem;
+
+        @media only screen and (max-width:575px){
+            margin-right: 0; 
+        }
+    }
+}
+
+
+
+
 .gallery__title{
     margin-top: 4rem;
     font-size: 5rem;
@@ -23,68 +68,5 @@
 
 
 
-.gallery{
 
-    &__box{
-        padding: 10rem;
-        text-align: center;
-
-        @supports(display:grid){
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-            grid-gap: 5rem;
-            align-items: flex-start;
-        }
-
-        @media only screen and(max-width:850px){
-            padding: 5rem;
-        }
-
-        @media only screen and(max-width:600px){
-            grid-gap: 2rem;
-            padding: 3rem;
-        }
-
-        @media only screen and(max-width:500px){
-            grid-gap: 1rem;
-            padding: 2rem;
-        }
-
-        @media only screen and(max-width:400px){
-            text-align: center;
-            grid-gap: 3rem;
-        }
-    }
-
-
-    &__img{
-        
-        width: 60rem;
-        margin-bottom: 4rem;
-        transition: .3s all ease-in-out;
-
-        &:hover{
-            transform: scale(1.03);
-        }
-
-        @supports(display:grid){
-            width: 30rem;
-            border-radius: .5rem;
-            box-shadow: 0rem 2rem 3rem rgba($color-golden, .3);
-            transition: .3s all ease-in-out;
-
-            @media only screen and(max-width:600px){
-                width: 25rem;
-            }
-
-            @media only screen and(max-width:400px){
-                width: 30rem;
-            }
-
-            &:hover{
-                transform: scale(1.05);
-            }
-        }
-    }
-}
 

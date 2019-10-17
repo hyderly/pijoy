@@ -19,27 +19,28 @@
 
 
 .page__title{
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 4rem;
     font-family: $font-secondary;
     font-weight: 700;
-    color: $color-primary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: #fff;
+    animation: page-title .8s ease-in-out;
 
-    @media only screen and(max-width:850px){
-        margin-top: 10rem;
-    }
-
-    @media only screen and(max-width:650px){
+    @media only screen and(max-width:1200px){
         font-size: 3rem;
     }
 
-    @media only screen and(max-width:450px){
+    @media only screen and(max-width:850px){
+        font-size: 2.8rem;
+    }
+
+    @media only screen and(max-width:650px){
         font-size: 2.5rem;
     }
+    
 
     &-2{
         margin: 4rem 0;
@@ -82,8 +83,22 @@
     font-size: 2rem;
     font-family: $font-primary;
     font-weight: 700;
-    color: $color-primary;
     margin-top: 5rem;
+    display: inline-block;
+    background-color: $color-primary;
+    color: #f1f1f1;
+    padding: .5rem 1rem;
+    transform: skewY(-1.5deg);
+    animation: para-title .8s ease-in-out;
+
+
+    // &:hover{
+    //     display: inline-block;
+    //     background-color: $color-primary;
+    //     color: #f1f1f1;
+    //     padding: .5rem 1rem;
+    //     transform: skewY(-3deg);
+    // }
 
     @media only screen and(max-width:650px){
         text-align: center;
@@ -100,18 +115,29 @@
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 2rem;
-    padding: 0 10rem;
+    padding: 0 0rem;
+    
 
     &-1{
-        border-bottom: .5rem solid $color-golden-2;
-        display: block;
+        display: inline-block;
         margin-top: 8rem;
+        position: relative;
+
+        &::after{
+            position: absolute;
+            display: inline-block;
+            content: "";
+            background-color: $color-golden-2;
+            width: 50%;
+            height: .5rem;
+            bottom: -1rem;
+            left: 0;
+        }
         
     }
 
     @media only screen and(max-width:650px){
         text-align: center;
-        padding: 0 6rem;
     }
     @media only screen and(max-width:450px){
         font-size: 1.7rem;
@@ -125,6 +151,17 @@
     font-size: 1.8rem;
     text-align: justify;
     line-height: 1.8;
+
+    animation: para-text .5s ease-in;
+
+
+    &::before{
+        content: "";
+        width: 1rem;
+        height: 100%;
+        background-color: $color-golden-2;
+        display: block;
+    }
 
 
     @media only screen and(max-width:650px){
@@ -148,6 +185,53 @@
         @media only screen and(max-width:650px){
             padding: 0 4rem;
         }
+    }
+}
+
+.para-text > a{
+    color: $color-golden-2;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+li.para-text::before{
+    content: "";
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    margin-right: .7rem;
+
+    // Older browsers
+    background-image: url(../images/right-arrow.svg);
+    background-size: cover;
+
+    // Newer browsers - masks
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+        background-color: $color-golden-2;
+        -webkit-mask-image: url(../images/right-arrow.png);;
+        -webkit-mask-size: cover;
+        mask-image: url(../images/right-arrow.png);
+        mask-size: cover;
+        background-image: none;
+    }
+}
+
+
+.intro{
+    background-color: $color-primary;
+    color: #f1f1f1;
+    border-radius: 10px;
+    padding: 3rem 0;
+    border: 3px $color-golden-2 solid;
+    margin: 0 10rem;
+    margin-top: 3rem;
+
+    @media only screen and(max-width:850px){
+        margin: 0;
+        margin-top: 3rem;
     }
 }
 

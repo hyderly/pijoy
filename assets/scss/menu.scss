@@ -68,12 +68,13 @@
         top: 0;
         transform: rotate(-135deg);
         width: 100%;
+        background-color: #f1f1f1;
 
     }
     &::after{
         top: 0;
         transform: rotate(135deg);
         width: 100%;
-        
+        background-color: #f1f1f1;
     }
 }

@@ -1,0 +1,95 @@
+
+
+.Corporate_Affiliation__header{
+    margin: 0 auto;
+    position: relative;
+    width: 80vw;
+    height: 30vh;
+    background-image: linear-gradient(rgba($color-primary, 0.5),rgba($color-primary-2, .7)),
+    url(../images/Corporate.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 2rem;
+
+    @media only screen and(max-width:850px) {
+        margin-top: 10rem;
+    }
+
+    @media only screen and(max-width:650px){
+        width: 100vw;
+    }
+}
+
+
+.corporate__container{
+    margin-top: 8rem;
+}
+
+.corporate__row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and(max-width: 850px){
+        flex-direction: column;
+    }
+}
+
+
+.box{
+    &:first-child{
+        background-image: linear-gradient(rgba($color-primary, 0.7),rgba($color-primary-2, .7)),
+        url(../images/sector.jpg);
+    }
+    background-image: linear-gradient(rgba($color-primary, 0.7),rgba($color-primary-2, .7)),
+    url(../images/company.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 3rem 5rem;
+    box-shadow: 0 2rem 3rem rgba($color-primary, 0.5);
+    height: auto;
+
+
+
+    @media only screen and(max-width: 850px){
+        flex: 1;
+    }
+
+    @media only screen and(max-width: 650px){
+        padding: 2rem;
+    }
+
+
+    &__title{
+        font-size: 3rem;
+        color: #f1f1f1;
+        font-weight: 700;
+        display: inline-block;
+        padding-bottom: 2px;
+        margin-bottom: 2rem;
+    }
+
+    &__list{
+        list-style: none;
+    }
+
+    &__item{
+        color: #f1f1f1;
+        font-weight: 400;
+        font-size: 2.2rem;
+        
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
+
+        &::before{
+            content: "";
+            display: inline-block;
+            height: 1.5rem;
+            width: 1.5rem;
+            margin-right: 1.5rem;
+            background-image: url(../images/tick-inside-circle.svg);
+            background-size: cover;
+        }
+    }
+}
