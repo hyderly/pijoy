@@ -387,7 +387,7 @@ body {
           background-color: #B28451; }
 
 .icon {
-  position: absolute;
+  position: fixed;
   top: 40px;
   right: 30px;
   display: none;
@@ -452,9 +452,13 @@ body {
   width: 100%; }
   @media only screen and (max-width: 850px) {
     .navbar {
-      height: 90vh;
+      height: 100vh;
       display: none;
-      transition: all .3s ease-in-out; } }
+      transition: all .3s ease-in-out;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 500; } }
   .navbar__list {
     text-align: center;
     display: flex;
@@ -502,6 +506,9 @@ body {
 
 .display-nav {
   display: block; }
+
+.overflow__hide {
+  overflow: hidden; }
 
 .Philanthropy__header {
   margin: 0 auto;
