@@ -9,13 +9,5 @@ let body = document.getElementsByTagName("body")[0];
 picon.addEventListener('click', function(){
     pnavbar.classList.toggle('display-nav');
     pmenu.classList.toggle('menu-active');
-    body.style.overflow = "hidden";
+    body.classList.toggle('overflow__hide');
 })
-
-
-
-
-
-
-
-
