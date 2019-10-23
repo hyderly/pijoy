@@ -46,6 +46,11 @@
 
     &__item{
         margin-right: 4rem;
+        
+
+        &:last-child{
+            margin-bottom: 10rem;
+        }
 
         // @media only screen and(max-width:850px){
         //     flex-direction: column;
