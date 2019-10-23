@@ -476,8 +476,7 @@ body {
       .navbar__list {
         flex-direction: column;
         justify-content: space-evenly;
-        height: 100%;
-        padding-bottom: 8rem; } }
+        height: 100%; } }
   .navbar__item {
     margin-right: 4rem; }
   .navbar__link {
