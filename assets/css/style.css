@@ -34,7 +34,7 @@ body {
   position: relative;
   width: 80vw;
   height: 30vh;
-  background-image: linear-gradient(rgba(16, 29, 44, 0.5), rgba(54, 72, 87, 0.7)), url(../images/accomplishment.jpg);
+  background-image: linear-gradient(rgba(39, 60, 117, 0.5), rgba(54, 72, 87, 0.7)), url(../images/accomplishment.jpg);
   background-size: cover;
   background-position: center;
   margin-top: 2rem; }
@@ -80,7 +80,7 @@ body {
   position: relative;
   width: 80vw;
   height: 30vh;
-  background-image: linear-gradient(rgba(16, 29, 44, 0.5), rgba(54, 72, 87, 0.7)), url(../images/bio.jpg);
+  background-image: linear-gradient(rgba(39, 60, 117, 0.5), rgba(54, 72, 87, 0.7)), url(../images/bio.jpg);
   background-size: cover;
   background-position: center;
   margin-top: 2rem; }
@@ -93,7 +93,7 @@ body {
   position: relative;
   width: 80vw;
   height: 30vh;
-  background-image: linear-gradient(rgba(16, 29, 44, 0.5), rgba(54, 72, 87, 0.7)), url(../images/contact.jpg);
+  background-image: linear-gradient(rgba(39, 60, 117, 0.5), rgba(54, 72, 87, 0.7)), url(../images/contact.jpg);
   background-size: cover;
   background-position: center;
   margin-top: 2rem; }
@@ -106,7 +106,7 @@ body {
   font-size: 5rem;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  color: #101d2c;
+  color: #273c75;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -134,14 +134,14 @@ body {
 
 .contact__form {
   width: 40rem;
-  background-color: #101d2c;
+  background-color: #273c75;
   border-radius: 1rem;
   padding: 2rem 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 2rem 3rem rgba(16, 29, 44, 0.3); }
+  box-shadow: 0 2rem 3rem rgba(39, 60, 117, 0.3); }
 
 .input {
   margin-bottom: 1.3rem;
@@ -173,7 +173,7 @@ body {
   position: relative;
   width: 80vw;
   height: 30vh;
-  background-image: linear-gradient(rgba(16, 29, 44, 0.5), rgba(54, 72, 87, 0.7)), url(../images/Corporate.jpg);
+  background-image: linear-gradient(rgba(39, 60, 117, 0.5), rgba(54, 72, 87, 0.7)), url(../images/Corporate.jpg);
   background-size: cover;
   background-position: center;
   margin-top: 2rem; }
@@ -193,14 +193,14 @@ body {
       flex-direction: column; } }
 
 .box {
-  background-image: linear-gradient(rgba(16, 29, 44, 0.7), rgba(54, 72, 87, 0.7)), url(../images/company.jpg);
+  background-image: linear-gradient(rgba(39, 60, 117, 0.7), rgba(54, 72, 87, 0.7)), url(../images/company.jpg);
   background-position: center;
   background-size: cover;
   padding: 3rem 5rem;
-  box-shadow: 0 2rem 3rem rgba(16, 29, 44, 0.5);
+  box-shadow: 0 2rem 3rem rgba(39, 60, 117, 0.5);
   height: auto; }
   .box:first-child {
-    background-image: linear-gradient(rgba(16, 29, 44, 0.7), rgba(54, 72, 87, 0.7)), url(../images/sector.jpg); }
+    background-image: linear-gradient(rgba(39, 60, 117, 0.7), rgba(54, 72, 87, 0.7)), url(../images/sector.jpg); }
   @media only screen and (max-width: 850px) {
     .box {
       flex: 1; } }
@@ -231,9 +231,14 @@ body {
       background-image: url(../images/tick-inside-circle.svg);
       background-size: cover; }
 
+.sector-img {
+  width: 42px;
+  height: 42px;
+  margin-top: 5rem; }
+
 .footer {
   margin-top: 20rem;
-  background-color: #101d2c;
+  background-color: #273c75;
   color: #f1f2f6;
   text-align: center;
   padding: 2rem 0; }
@@ -246,7 +251,7 @@ body {
   position: relative;
   width: 80vw;
   height: 30vh;
-  background-image: linear-gradient(rgba(16, 29, 44, 0.5), rgba(54, 72, 87, 0.7)), url(../images/image-gallery.jpg);
+  background-image: linear-gradient(rgba(39, 60, 117, 0.5), rgba(54, 72, 87, 0.7)), url(../images/image-gallery.jpg);
   background-size: cover;
   background-position: center;
   margin-top: 2rem; }
@@ -286,7 +291,7 @@ body {
   font-size: 5rem;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  color: #101d2c;
+  color: #273c75;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -306,7 +311,7 @@ body {
   position: relative;
   width: 100vw;
   height: calc(100vh - 7rem);
-  background-image: linear-gradient(rgba(16, 29, 44, 0.5), rgba(54, 72, 87, 0.7)), url(../images/man.jpg);
+  background-image: linear-gradient(rgba(39, 60, 117, 0.5), rgba(54, 72, 87, 0.7)), url(../images/man.jpg);
   background-size: cover;
   background-position: top; }
   @media only screen and (max-width: 850px) {
@@ -443,7 +448,7 @@ body {
     background-color: #f1f1f1; }
 
 .navbar {
-  background-color: #101d2c;
+  background-color: #273c75;
   border-bottom: 0.5rem solid #B28451;
   height: 7rem;
   display: flex;
@@ -515,7 +520,7 @@ body {
   position: relative;
   width: 80vw;
   height: 30vh;
-  background-image: linear-gradient(rgba(16, 29, 44, 0.5), rgba(54, 72, 87, 0.7)), url(../images/Philanthropy.jpg);
+  background-image: linear-gradient(rgba(39, 60, 117, 0.5), rgba(54, 72, 87, 0.7)), url(../images/Philanthropy.jpg);
   background-size: cover;
   background-position: center;
   margin-top: 2rem; }
@@ -576,7 +581,7 @@ body {
     font-size: 3rem;
     font-family: inherit;
     font-weight: 500;
-    color: #101d2c;
+    color: #273c75;
     text-align: center; }
     @media only screen and (max-width: 1000px) {
       .page__title-2 {
@@ -605,7 +610,7 @@ body {
   font-weight: 700;
   margin-top: 5rem;
   display: inline-block;
-  background-color: #101d2c;
+  background-color: #273c75;
   color: #f1f1f1;
   padding: .5rem 1rem;
   transform: skewY(-1.5deg);
@@ -700,7 +705,7 @@ li.para-text::before {
       background-image: none; } }
 
 .intro {
-  background-color: #101d2c;
+  background-color: #273c75;
   color: #f1f1f1;
   border-radius: 10px;
   padding: 3rem 0;
@@ -711,6 +716,9 @@ li.para-text::before {
     .intro {
       margin: 0;
       margin-top: 3rem; } }
+
+.company-name {
+  color: #c23616; }
 
 .dark-bold {
   color: #222;
