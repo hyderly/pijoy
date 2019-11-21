@@ -311,12 +311,13 @@ body {
   position: relative;
   width: 100vw;
   height: calc(100vh - 7rem);
-  background-image: linear-gradient(rgba(39, 60, 117, 0.5), rgba(54, 72, 87, 0.7)), url(../images/pijoy-1.png);
+  background-image: linear-gradient(rgba(39, 60, 117, 0.5), rgba(54, 72, 87, 0.7)), url(../images/pijoy-2.png);
   background-size: cover;
   background-position: top; }
   @media only screen and (max-width: 850px) {
     .hero {
-      height: 100vh; } }
+      height: 100vh;
+      background-image: linear-gradient(rgba(39, 60, 117, 0.5), rgba(54, 72, 87, 0.7)), url(../images/pijoy-3.png); } }
   .hero__content {
     position: absolute;
     top: 30%;
@@ -339,7 +340,7 @@ body {
     .hero__content-text {
       font-size: 5rem;
       font-weight: 700;
-      font-family: "Lato", sans-serif;
+      font-family: "Noto Sans", sans-serif;
       color: #f1f2f6;
       letter-spacing: 3px; }
       @media only screen and (max-width: 500px) {
@@ -348,7 +349,7 @@ body {
       @media only screen and (max-width: 400px) {
         .hero__content-text {
           font-size: 4rem;
-          letter-spacing: 1px; } }
+          letter-spacing: .5px; } }
       .hero__content-text--1 {
         font-size: 4rem; }
       .hero__content-text--2 {
@@ -367,14 +368,14 @@ body {
       @supports (display: flex) {
         .hero__content-buttons {
           display: flex;
-          justify-content: space-evenly;
           align-items: center;
           margin-top: 4rem; } }
     .hero__content-btn {
       color: #f1f2f6;
       font-size: 2rem;
       padding: 1.5rem 3rem;
-      text-decoration: none; }
+      text-decoration: none;
+      margin-right: 3rem; }
       @media only screen and (max-width: 400px) {
         .hero__content-btn {
           padding: 1.5rem 1.8rem;
