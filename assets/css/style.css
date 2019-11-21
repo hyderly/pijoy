@@ -311,13 +311,13 @@ body {
   position: relative;
   width: 100vw;
   height: calc(100vh - 7rem);
-  background-image: linear-gradient(rgba(39, 60, 117, 0.3), rgba(54, 72, 87, 0.3)), url(../images/pijoy-2.png);
+  background-image: linear-gradient(rgba(39, 60, 117, 0.3), rgba(54, 72, 87, 0.3)), url(../images/pijoyf-1.png);
   background-size: cover;
   background-position: top; }
   @media only screen and (max-width: 850px) {
     .hero {
       height: 100vh;
-      background-image: linear-gradient(rgba(39, 60, 117, 0.5), rgba(54, 72, 87, 0.7)), url(../images/pijoy-3.png); } }
+      background-image: linear-gradient(rgba(39, 60, 117, 0.5), rgba(54, 72, 87, 0.7)), url(../images/pijoyf-2.png); } }
   .hero__content {
     position: absolute;
     top: 30%;
