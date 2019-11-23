@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Noto+Sans:400,700" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="assets/images/logo.png">
 
 </head>
 <body>
@@ -22,13 +24,13 @@
     <!-- The navbar -->
     <nav class="navbar">
         <ul class="navbar__list">
-            <li class="navbar__item"><a href="index.html" class="navbar__link ">Home</a></li>
-            <li class="navbar__item"><a href="Biography.html" class="navbar__link">Biography</a></li>
-            <li class="navbar__item"><a href="Corporate_Affiliation.html" class="navbar__link">Corporate Affiliation</a></li>
-            <li class="navbar__item"><a href="Accomplishments.html" class="navbar__link">Accomplishments</a></li>
-            <li class="navbar__item"><a href="Philanthropy.html" class="navbar__link">Philanthropy</a></li>
-            <li class="navbar__item"><a href="Gallery.html" class="navbar__link">Gallery</a></li>
-            <li class="navbar__item"><a href="Contact.html" class="navbar__link">Contact me</a></li>
+            <li class="navbar__item"><a href="index.php" class="navbar__link ">Home</a></li>
+            <li class="navbar__item"><a href="biography.php" class="navbar__link">Biography</a></li>
+            <li class="navbar__item"><a href="corporate.php" class="navbar__link">Corporate Affiliation</a></li>
+            <li class="navbar__item"><a href="accomplishments.php" class="navbar__link">Accomplishments</a></li>
+            <li class="navbar__item"><a href="philanthropy.php" class="navbar__link">Philanthropy</a></li>
+            <li class="navbar__item"><a href="gallery.php" class="navbar__link">Gallery</a></li>
+            <li class="navbar__item"><a href="contact.php" class="navbar__link">Contact</a></li>
         </ul>
     </nav>
 
@@ -39,31 +41,49 @@
         <div class="Contact">
 
             <div class="Contact__header">
-                <h3 class="page__title">Contact - <span>ME</span></h3>
+                <h3 class="page__title">Contact - <span>P I Joy</span></h3>
             </div>
             
 
             <div class="intro">
                 <p class="para-text">
                     Whether you are a budding entrepreneur or a start-up owner or want to build your own company,
-                    I welcome you take benefit from my extensive experience and knowledge. I always appreciate
-                    enthusiastic and motivated young people looking for opportunities to polish their leadership
-                    and business skills. I am delighted to serve you with my knowledge and experience. You can also
-                    contact me to schedule an interview to inspire and motivate the young generation.
+                    Mr Joy welcomes you take benefit from his extensive experience and knowledge. He always appreciate
+                    enthusiastic and motivated young people looking for opportunities to polish their leadership and
+                    business skills. He is delighted to share with you his knowledge and experience. You can also contact
+                    him to schedule an interview to inspire and motivate the young generation
                 </p>
             </div>
             
     
-            <p class="para-text dark-bold">Get in touch with me on the given contact form:- </p>
+            <p class="para-text dark-bold">Get in touch with Mr Joy on the given contact form:-.</p>
+
+
+
+           <?php 
+                $Msg = "";
+                if(isset($_GET['error']))
+                {
+                    $Msg = " Please Fill in the Blanks ";
+                    echo "<script type='text/javascript'>alert('$Msg');</script>";
+                }
+
+                if(isset($_GET['success']))
+                {
+                    $Msg = " Your Message Has Been Sent ";
+                    echo "<script type='text/javascript'>alert('$Msg');</script>";
+                }
+                        
+            ?>
     
     
             <div class="contact__box">
-                <form action="" class="contact__form">
+                <form action="process.php" method="post" class="contact__form">
                     <input class="input" type="text" name="name" placeholder="Full Name">
-                    <input class="input" type="text" name="email" placeholder="Email">
+                    <input class="input" type="email" name="email" placeholder="Email">
                     <input class="input" type="text" name="subject" placeholder="Subject">
                     <textarea class="input" name="messsage" id="#" cols="30" rows="10" placeholder="Message"></textarea>
-                    <button class="btn">Send</button>
+                    <button class="btn" name="btn-send">Send</button>
                 </form>
             </div>
         </div>
